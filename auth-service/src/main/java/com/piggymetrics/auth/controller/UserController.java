@@ -16,6 +16,7 @@ import java.security.Principal;
 @RequestMapping("/users")
 public class UserController {
 
+//adding a simple comment to force a change. Will only UserController.java get scanned?
 	@Autowired
 	private UserService userService;
 
