@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.security.Principal;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -39,8 +42,8 @@ public class UserController {
 		Integer i = inputString.length();
 		if(i>0)
 		{
-			//do stuff	
-			//do more stuff		
+			//Lets try a DateFormat with no TZ specified (seems to work for several users)
+			DateFormat currentDateFormat = new SimpleDateFormat("dd MMM yyyy");
 		}
 		userService.create(user);
 	}
