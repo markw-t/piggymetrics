@@ -33,11 +33,11 @@ public class UserController {
 	}
 
 	//adding a test method to see if code triggers action in the scanner 
-	public void testMethod(@Valid @RequestBody User user)
+	public void testMethod(@Valid @RequestBody User user, String inputString)
 	{
-		//lets use the user object before null checking it to see if the scanner finds it
-		String myString = user.toString();
-		if(myString.length()>0)
+		//lets use the inputString object before null checking it to see if the scanner finds it
+		Integer i = inputString.length();
+		if(i>0)
 		{
 			//do stuff	
 			//do more stuff		
