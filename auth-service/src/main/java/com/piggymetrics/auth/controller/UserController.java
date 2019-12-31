@@ -39,7 +39,8 @@ public class UserController {
 		String myString = user.toString();
 		if(myString.length()>0)
 		{
-			//do stuff			
+			//do stuff	
+			//do more stuff		
 		}
 		userService.create(user);
 	}
