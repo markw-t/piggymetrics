@@ -35,6 +35,12 @@ public class UserController {
 	//adding a test method to see if code triggers action in the scanner 
 	public void testMethod(@Valid @RequestBody User user)
 	{
+		//lets use the user object before null checking it to see if the scanner finds it
+		String myString = user.toString();
+		if(myString.length()>0)
+		{
+			//do stuff			
+		}
 		userService.create(user);
 	}
 }
