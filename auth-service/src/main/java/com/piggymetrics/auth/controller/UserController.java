@@ -31,4 +31,10 @@ public class UserController {
 	public void createUser(@Valid @RequestBody User user) {
 		userService.create(user);
 	}
+
+	//adding a test method to see if code triggers action in the scanner 
+	public void testMethod(@Valid @RequestBody User user)
+	{
+		userService.create(user);
+	}
 }
